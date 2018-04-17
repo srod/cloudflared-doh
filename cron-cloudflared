@@ -1,2 +1,2 @@
 # Update clouflared every day at 2am
-0 2 * * * /cloudflared update >>/var/log/cron.log 2>&1
+0 2 * * * /cloudflared update && supervisorctl restart cloudflared >>/var/log/cron.log 2>&1
