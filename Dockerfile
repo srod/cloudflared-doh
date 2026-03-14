@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:trixie
 
 LABEL image="srod/cloudflared-doh"
 LABEL maintainer="srodolphe@gmail.com"
